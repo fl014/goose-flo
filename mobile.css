@@ -135,15 +135,19 @@ p.price {
 /* Screen Shots
 ------------------------------------------ */
 section.screen-shots {
-
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1rem;
+   background-color: #3d6bd5;
+   padding: 1rem;
 }
 
-section.screen-shots img:nth-child() {
-
+section.screen-shots img:nth-child(1) {
+   grid-column: span 2;
 }
 
 section.screen-shots img {
-
+   border: 2px solid black;
 }
 
 
@@ -152,33 +156,48 @@ section.screen-shots img {
 /* Game Description
 ------------------------------------------ */
 main {
-
+   max-width: 960px;
+   margin: 0;
+   display: grid;
+   grid-template-rows: auto auto auto;
+   grid-gap: 2rem;
+   justify-items: center;
+   align-items: start;
 }
 
 
 
 section.description {
-
+   font-size: 125%;
+   line-height: 2rem;
+   border: 2px solid black;
+   padding: 1rem;
 }
 
 section.description h2 {
-
+   font-size: 135%;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
 }
 
 section.description h3 {
-
+   font-size: 120%;
+   margin-bottom: 1rem;
 }
 
 section.description li {
-
+   margin-left: 2rem;
+   margin-bottom: .75rem;
 }
 
 img.goose-badge {
-
+   max-width: 100%;
 }
 
 section.play-modes {
-
+   background-color: #a5a5a5;
+   border-radius: 2rem;
+   padding: 1rem;
 }
 
 
