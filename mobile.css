@@ -201,14 +201,20 @@ img.goose-badge {
 
 section.play-modes {
    background-color: #a5a5a5;
-   border-radius: 2rem;
-   padding: 1rem;
+   border-radius: 3rem;
    grid-row: 1/2;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1rem;
+   padding: 1rem;
+   justify-content: center;
 }
 
 
 /* Footer
 ------------------------------------------ */
 footer {
-   
+   background-color: #3d6bd5;
+   padding: 2rem;
+   color: white;
+   text-align: center;
 }
